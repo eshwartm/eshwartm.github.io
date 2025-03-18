@@ -19,16 +19,16 @@
 /* Dark Mode */
 [data-theme="dark"] {
     --primary-color: #5ac8fa;
-    --secondary-color: #0066cc;
-    --accent-color: #5ac8fa;
-    --text-color: #f8f9fa;
-    --text-light: #e9ecef;
-    --bg-color: #121212;
-    --bg-light: #1e1e1e;
-    --bg-dark: #000;
-    --border-color: #2a2a2a;
-    --card-bg: #1e1e1e;
-    --shadow-color: rgba(0, 0, 0, 0.3);
+    --secondary-color: #64d2ff;
+    --accent-color: #0a84ff;
+    --text-color: #ffffff;
+    --text-light: #a0a0a0;
+    --bg-color: #1a1a1a;
+    --bg-light: #2c2c2c;
+    --bg-dark: #000000;
+    --border-color: #404040;
+    --card-bg: #2c2c2c;
+    --shadow-color: rgba(0, 0, 0, 0.5);
 }
 
 * {
