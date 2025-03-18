@@ -54,6 +54,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+    overflow-x: hidden;
 }
 
 a {
@@ -237,6 +238,12 @@ nav {
 
     .hamburger.active span:nth-child(3) {
         transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    .container {
+        width: 95%;
+        padding: 0 10px;
+        margin: 0 auto;
     }
 }
 
