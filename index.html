@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eshwar Ramesh | iOS Developer Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4; }
         .container { max-width: 900px; margin: auto; padding: 20px; background-color: #fff; }
@@ -16,100 +19,379 @@
     </style>
 </head>
 <body>
-<div class="container">
-
-    <h1>Eshwar Ramesh</h1>
-    <p><strong>Lead Mobile Engineer | iOS | Swift | Objective-C | Agile Scrum Master</strong><br>
-    Bengaluru, Karnataka, India</p>
-
-    <div class="section">
-        <h2>Contact Information</h2>
-        <ul>
-            <li>Phone: 9538209357</li>
-            <li>Email: <a href="mailto:eshwar.ramesh@gmail.com">eshwar.ramesh@gmail.com</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/eshwar-r-831303ab">linkedin.com/in/eshwar-r-831303ab</a></li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Summary</h2>
-        <p>I have over 11 years of experience in mobile development, primarily focused on iOS. Currently, I am the Lead Mobile Engineer at Fast Code AI, managing mobile development for Spiral Health, a US-based healthcare client.</p>
-    </div>
-
-    <div class="section">
-        <h2>Skills & Certifications</h2>
-        <ul>
-            <li>Fastlane</li>
-            <li>Continuous Integration & Continuous Delivery (CI/CD)</li>
-            <li>Mobile Platforms (iOS, Swift, Objective-C)</li>
-            <li>Agile Scrum Master Certification</li>
-            <li>Build an AI Personal Assistant with a Vector Database Certification</li>
-        </ul>
-    </div>
-
-    <div class="section">
-        <h2>Professional Experience</h2>
-
-        <h3>Lead Mobile Engineer - Fast Code AI (Feb 2024 - Present)</h3>
-        <ul>
-            <li><strong>Spiral Health:</strong> Developed an iOS app aimed at enhancing posture and alleviating pain through personalized exercises.
-                [<a href="https://spiral.health/">Website</a>] [<a href="https://apps.apple.com/us/app/spiral-health/id6476365191">App Store Link</a>]
-                <ul>
-                    <li>Oversee end-to-end feature development and deployment.</li>
-                    <li>Integrated Firebase, Sentry, Fastlane.</li>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">ER</div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
-            </li>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+            
+            <div class="hero">
+                <div class="hero-content">
+                    <h1>Eshwar Ramesh</h1>
+                    <h2>Lead Mobile Engineer</h2>
+                    <p>iOS | Swift | Objective-C | Agile Scrum Master</p>
+                    <div class="cta-buttons">
+                        <a href="#contact" class="btn primary-btn">Contact Me</a>
+                        <a href="#experience" class="btn secondary-btn">View Experience</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-            <li><strong>WiseNotes:</strong> Built an AI-powered note-taking app from scratch.
-                [<a href="https://wisenotes.ai/">Website</a>] [<a href="https://apps.apple.com/in/app/wisenotes-ai-notetaker/id6741110364">App Store Link</a>]
-            </li>
-        </ul>
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I have over 11 years of experience in mobile development, primarily focused on iOS. Currently, I am the Lead Mobile Engineer at Fast Code AI, managing mobile development for Spiral Health, a US-based healthcare client.</p>
+                    <div class="personal-info">
+                        <div class="info-item">
+                            <span class="info-label">Experience:</span>
+                            <span class="info-value">11+ Years</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Specialization:</span>
+                            <span class="info-value">iOS Development</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Email:</span>
+                            <span class="info-value">eshwar.ramesh@gmail.com</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Location:</span>
+                            <span class="info-value">Bengaluru, Karnataka, India</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/eshwartm" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/eshwar-r-831303ab" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h3>iOS Lead Engineer - Simplilearn (May 2022 - Jan 2024)</h3>
-        <ul>
-            <li>Managed high-performing iOS app serving thousands of users globally.</li>
-            <li>Integrated Paid Premium Course Certificates (10% increase in purchases).</li>
-            <li>Improved app release processes and increased unit test coverage by 12.5%.</li>
-            <li>Led Agile Scrum team to deliver bi-weekly sprints.</li>
-        </ul>
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Skills & Certifications</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Swift</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Objective-C</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SwiftUI</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools & Frameworks</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Fastlane</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CI/CD</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 85%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Firebase</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-level" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Certifications</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Agile Scrum Master</span>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>AI Personal Assistant with Vector Database</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h3>Senior Software Engineer - Simplilearn (Sep 2020 - May 2022)</h3>
-        <ul><li>Worked on global education tech platform serving millions of users.</li></ul>
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Lead Mobile Engineer</h3>
+                        <h4>Fast Code AI</h4>
+                        <p class="timeline-date">Feb 2024 - Present</p>
+                        <p><strong>Spiral Health:</strong> Developed an iOS app aimed at enhancing posture and alleviating pain through personalized exercises.</p>
+                        <ul class="achievements">
+                            <li>Oversee end-to-end feature development and deployment</li>
+                            <li>Integrated Firebase, Sentry, Fastlane</li>
+                        </ul>
+                        <p><strong>WiseNotes:</strong> Built an AI-powered note-taking app from scratch.</p>
+                        <div class="project-links">
+                            <a href="https://spiral.health/" target="_blank" class="btn small-btn">Spiral Health</a>
+                            <a href="https://apps.apple.com/us/app/spiral-health/id6476365191" target="_blank" class="btn small-btn secondary-btn">App Store</a>
+                            <a href="https://wisenotes.ai/" target="_blank" class="btn small-btn">WiseNotes</a>
+                            <a href="https://apps.apple.com/in/app/wisenotes-ai-notetaker/id6741110364" target="_blank" class="btn small-btn secondary-btn">App Store</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>iOS Lead Engineer</h3>
+                        <h4>Simplilearn</h4>
+                        <p class="timeline-date">May 2022 - Jan 2024</p>
+                        <ul class="achievements">
+                            <li>Managed high-performing iOS app serving thousands of users globally</li>
+                            <li>Integrated Paid Premium Course Certificates (10% increase in purchases)</li>
+                            <li>Improved app release processes and increased unit test coverage by 12.5%</li>
+                            <li>Led Agile Scrum team to deliver bi-weekly sprints</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Senior Software Engineer</h3>
+                        <h4>Simplilearn</h4>
+                        <p class="timeline-date">Sep 2020 - May 2022</p>
+                        <ul class="achievements">
+                            <li>Worked on global education tech platform serving millions of users</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer II</h3>
+                        <h4>Medlife.com</h4>
+                        <p class="timeline-date">Jul 2019 - Sep 2020</p>
+                        <ul class="achievements">
+                            <li>Backend development using Java Spring Boot/Kafka</li>
+                            <li>A/B testing microservices using Redis/PostgreSQL</li>
+                            <li>React Native frontend compilation for iOS</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer II</h3>
+                        <h4>Myra Medicines</h4>
+                        <p class="timeline-date">Jul 2017 - Jul 2019</p>
+                        <ul class="achievements">
+                            <li>Rebuilt iOS app using MVVM architecture, significantly improving performance and customer satisfaction</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <h4>Hiver</h4>
+                        <p class="timeline-date">Nov 2015 - Jul 2017</p>
+                        <ul class="achievements">
+                            <li>Built Hiver for iOS from scratch using Swift and contributed to Android app using React Native</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>iOS Developer</h3>
+                        <h4>Clusto</h4>
+                        <p class="timeline-date">Feb 2015 - Oct 2015</p>
+                        <ul class="achievements">
+                            <li>Developed an integrated email, notes, and calendar app for iOS</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>iOS Developer</h3>
+                        <h4>Metarain</h4>
+                        <p class="timeline-date">Jun 2013 - Sep 2014</p>
+                        <ul class="achievements">
+                            <li>Brought Pixter and Colorbay photo-sharing apps to market using Objective-C</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <h4>ICT Health</h4>
+                        <p class="timeline-date">Jan 2012 - May 2013</p>
+                        <ul class="achievements">
+                            <li>Brought hinai HD radiology image viewer app to market for iPad using Objective-C</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h3>Software Engineer II - Medlife.com (Jul 2019 - Sep 2020)</h3>
-        <ul>
-            <li>Backend development using Java Spring Boot/Kafka.</li>
-            <li>A/B testing microservices using Redis/PostgreSQL.</li>
-            <li>React Native frontend compilation for iOS.</li>
-        </ul>
+    <section id="education" class="skills-section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>MCA in Computer Science</h3>
+                        <h4>Visvesvaraya Technological University</h4>
+                        <p class="timeline-date">2009 - 2012</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Bachelor's Degree</h3>
+                        <h4>St. Joseph's College of Arts and Science</h4>
+                        <p class="timeline-date">2006 - 2009</p>
+                        <p>Physics, Mathematics, Computer Science</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>High School</h3>
+                        <h4>Frank Anthony Public School</h4>
+                        <p class="timeline-date">2004 - 2006</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h3>Software Engineer II - Myra Medicines (Jul 2017 - Jul 2019)</h3>
-        <ul><li>Rebuilt iOS app using MVVM architecture, significantly improving performance and customer satisfaction.</li></ul>
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>9538209357</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:eshwar.ramesh@gmail.com">eshwar.ramesh@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Bengaluru, Karnataka, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/eshwar-r-831303ab" target="_blank">linkedin.com/in/eshwar-r-831303ab</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h3>Software Engineer - Hiver (Nov 2015 - Jul 2017)</h3>
-        <ul><li>Built Hiver for iOS from scratch using Swift and contributed to Android app using React Native.</li></ul>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Eshwar Ramesh. All Rights Reserved.</p>
+                <div class="social-links">
+                    <a href="https://github.com/eshwartm" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/eshwar-r-831303ab" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-        <h3>iOS Developer - Clusto (Feb 2015 - Oct 2015)</h3>
-        <ul><li>Developed an integrated email, notes, and calendar app for iOS.</li></ul>
-
-        <h3>iOS Developer - Metarain (Jun 2013 - Sep 2014)</h3>
-        <ul><li>Brought Pixter and Colorbay photo-sharing apps to market using Objective-C.</li></ul>
-
-        <h3>Software Engineer - ICT Health (Jan 2012 - May 2013)</h3>
-        <ul><li>Brought hinai HD radiology image viewer app to market for iPad using Objective-C.</li></ul>
-
-    </div>
-
-    <div class="section">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>MCA in Computer Science:</strong> Visvesvaraya Technological University (2009-2012)</li>
-            <li><strong>Bachelor's Degree:</strong> Physics, Mathematics, Computer Science – St. Joseph's College of Arts and Science (2006-2009)</li>
-            <li><strong>High School:</strong> Frank Anthony Public School (2004-2006)</li>
-        </ul>
-    </div>
-
-</div>
-
+    <script src="js/main.js"></script>
 </body>
 </html>

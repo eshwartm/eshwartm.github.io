@@ -184,6 +184,18 @@ nav {
     transition: var(--transition);
 }
 
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 .hero {
     display: flex;
     align-items: center;
@@ -226,16 +238,20 @@ nav {
 }
 
 .profile-placeholder {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
+    width: 250px;
+    height: 250px;
     background-color: var(--bg-light);
+    border-radius: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: var(--primary-color);
-    font-size: 6rem;
+    justify-content: center;
+    margin-left: 50px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.profile-placeholder i {
+    font-size: 100px;
+    color: var(--primary-color);
 }
 
 /* About Section */
@@ -243,6 +259,14 @@ nav {
     display: flex;
     align-items: center;
     gap: 50px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.about-content.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .about-text {
@@ -320,14 +344,24 @@ nav {
     width: 50%;
     box-sizing: border-box;
     margin-bottom: 50px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.timeline-item.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .timeline-item:nth-child(odd) {
     left: 0;
+    transition-delay: 0.2s;
 }
 
 .timeline-item:nth-child(even) {
     left: 50%;
+    transition-delay: 0.4s;
 }
 
 .timeline-dot {
@@ -409,6 +443,22 @@ nav {
 
 .skill-item {
     margin-bottom: 15px;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.skill-item.animate {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.skill-item:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.skill-item:nth-child(3) {
+    transition-delay: 0.4s;
 }
 
 .skill-info {
@@ -497,7 +547,9 @@ nav {
 
 .project-links {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
+    margin-top: 15px;
 }
 
 /* Contact Section */
@@ -598,78 +650,56 @@ footer .social-links a:hover {
     .hero {
         flex-direction: column;
         text-align: center;
-        gap: 50px;
     }
     
-    .cta-buttons {
-        justify-content: center;
+    .hero-image {
+        margin-top: 30px;
     }
     
-    .about-content {
-        flex-direction: column;
+    .profile-placeholder {
+        margin-left: 0;
+    }
+    
+    .section-title {
+        font-size: 2rem;
     }
     
     .contact-container {
-        grid-template-columns: 1fr;
+        flex-direction: column;
     }
     
-    .timeline-item {
-        width: 100%;
-        padding-left: 70px;
-        padding-right: 25px;
-    }
-    
-    .timeline-item:nth-child(even) {
-        left: 0;
-    }
-    
-    .timeline::after {
-        left: 31px;
-    }
-    
-    .timeline-dot {
-        left: 22px;
-        right: auto;
+    .contact-form {
+        margin-top: 30px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+        z-index: 1001;
+    }
+    
     .nav-links {
         position: fixed;
-        top: 70px;
-        left: 0;
-        right: 0;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
         background-color: var(--bg-color);
         flex-direction: column;
         align-items: center;
-        padding: 20px 0;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-        transform: translateY(-150%);
-        transition: var(--transition);
+        justify-content: center;
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
     }
     
     .nav-links.active {
-        transform: translateY(0);
+        right: 0;
     }
     
     .nav-links li {
-        margin: 15px 0;
-    }
-    
-    .hamburger {
-        display: block;
-    }
-    
-    .hamburger.active span:nth-child(1) {
-        transform: rotate(45deg) translate(5px, 6px);
-    }
-    
-    .hamburger.active span:nth-child(2) {
-        opacity: 0;
-    }
-    
-    .hamburger.active span:nth-child(3) {
-        transform: rotate(-45deg) translate(5px, -6px);
+        margin: 20px 0;
     }
     
     .hero-content h1 {
@@ -680,26 +710,81 @@ footer .social-links a:hover {
         font-size: 1.5rem;
     }
     
-    .section-title {
-        font-size: 2rem;
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
     }
     
-    .projects-grid {
+    .cta-buttons .btn {
+        margin: 10px 0;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .about-image {
+        margin-bottom: 30px;
+    }
+    
+    .skills-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .timeline-content {
+        padding: 15px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-content .social-links {
+        margin-top: 20px;
     }
 }
 
 @media screen and (max-width: 576px) {
-    .personal-info {
-        grid-template-columns: 1fr;
+    .container {
+        width: 95%;
+        padding: 0 10px;
     }
     
-    .cta-buttons {
+    section {
+        padding: 70px 0;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .profile-placeholder {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .profile-placeholder i {
+        font-size: 80px;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+    
+    .timeline-date {
+        position: static;
+        margin-bottom: 10px;
+    }
+    
+    .contact-item {
         flex-direction: column;
-        gap: 15px;
+        text-align: center;
     }
     
-    .cta-buttons .btn {
-        width: 100%;
+    .contact-item i {
+        margin-bottom: 10px;
+        margin-right: 0;
     }
 }
