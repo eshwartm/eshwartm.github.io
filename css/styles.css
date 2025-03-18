@@ -21,14 +21,14 @@
     --primary-color: #5ac8fa;
     --secondary-color: #64d2ff;
     --accent-color: #0a84ff;
-    --text-color: #ffffff;
-    --text-light: #a0a0a0;
-    --bg-color: #1a1a1a;
-    --bg-light: #2c2c2c;
-    --bg-dark: #000000;
-    --border-color: #404040;
-    --card-bg: #2c2c2c;
-    --shadow-color: rgba(0, 0, 0, 0.5);
+    --text-color: #333333;
+    --text-light: #666666;
+    --bg-color: #ffffff;
+    --bg-light: #f8f9fa;
+    --bg-dark: #e9ecef;
+    --border-color: #dee2e6;
+    --card-bg: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 * {
